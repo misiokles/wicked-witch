@@ -1,0 +1,16 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"louryEstate" : {
+				"name" : "Loury Estate",
+				"creatures" : [[ "wwickedWitch" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "louryEstate.def",
+						"mask" : [ "VVVV", "VVBV", "VVBV", "VVAB" ]
+					}
+				}
+			}
+		}
+	}	
+}

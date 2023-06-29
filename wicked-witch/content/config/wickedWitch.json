@@ -1,0 +1,83 @@
+{
+	"wwickedWitch":
+	{
+		"name" :
+		{
+			"plural" : "Wicked Witches",
+			"singular" : "Wicked Witch"
+		},
+		"faction" : "fortress",		
+		"advMapAmount" :
+		{
+			"min" : 10,
+			"max" : 16
+		},
+		"level" : 4,
+		"attack" : 8,
+		"defense" : 7,
+		"damage" :
+		{
+			"min" : 1,
+			"max" : 2
+		},
+		"growth" : 4,
+		"hitPoints" : 25,
+		"speed" : 15,
+		"fightValue" : 206,
+		"aiValue" : 211,
+		"cost" :
+		{
+			"gold" : 315
+		},
+		"hasDoubleWeek": true,
+		"doubleWide" : false,
+		"graphics" :
+		{
+			"animation" : "wwitch.def",
+			"map" : "advWwitch.def",
+			"iconSmall" : "witch32.png",
+			"iconLarge" : "witch58.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "wwitchattack.wav",
+			"defend": "wwitchdefend.wav",
+			"killed": "wwitchdie.wav",
+			"move": "wwitchmove.wav",
+			"wince": "wwitchhit.wav"
+        },
+		"abilities" :
+		{
+			"guardians":
+			{
+				"type": "SUMMON_GUARDIANS",
+				"val": 80,
+				"subtype": "creature.kraven"
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 8
+			},
+			"magicarrowCaster" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.magicArrow",
+				"val" : 3
+			},
+			"spellStrengh" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.magicArrow",
+				"val" : 50
+			}
+		}
+	}
+}

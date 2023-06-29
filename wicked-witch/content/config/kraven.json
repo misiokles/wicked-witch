@@ -1,0 +1,77 @@
+{
+	"kraven":
+	{
+		"name" :
+		{
+			"plural" : "Ravens",
+			"singular" : "Raven"
+		},
+		"faction" : "neutral",		
+		"advMapAmount" :
+		{
+			"min" : 16,
+			"max" : 30
+		},
+		"level" : 2,
+		"attack" : 4,
+		"defense" : 6,
+		"damage" :
+		{
+			"min" : 1,
+			"max" : 3
+		},
+		"growth" : 9,
+		"hitPoints" : 8,
+		"speed" : 0,
+		"fightValue" : 146,
+		"aiValue" : 133,
+		"cost" :
+		{
+			"gold" : 100
+		},
+		"hasDoubleWeek": false,
+		"special": true,
+		"doubleWide" : false,
+		"graphics" :
+		{
+			"animation" : "raven.def",
+			"map" : "advRaven.def",
+			"iconSmall" : "krukSmall.png",
+			"iconLarge" : "krukBig.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "kravenattack.wav",
+			"defend": "kravendefend.wav",
+			"killed": "kravendie.wav",
+			"move": "kravenmove.wav",
+			"wince": "kravenwince.wav"
+        },
+		"abilities" :
+		{
+			"magicMirror":
+			{
+				"type": "MAGIC_MIRROR",
+				"val": 10
+			},
+			"expensiveMagic":
+			{
+				"type": "CHANGES_SPELL_COST_FOR_ENEMY",
+				"val": 3,
+			},
+			"hasteImm":
+			{
+				"type": "SPELL_IMMUNITY",
+				"subtype": "spell.haste",
+				"addInfo": 1
+			}
+		}
+	}
+}
